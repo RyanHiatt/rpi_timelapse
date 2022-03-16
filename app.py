@@ -4,7 +4,7 @@ from flask import Flask, render_template, Response
 
 # import camera driver
 if os.environ.get('CAMERA'):
-    Camera = import_module('camera_' + os.environ['CAMERA']).Camera
+    Camera = import_module('camera_' + 'pi')
 else:
     from camera import Camera
 
